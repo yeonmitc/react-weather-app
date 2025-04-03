@@ -24,6 +24,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   margin: auto;
   width: 50vw;
   gap: 15px;
@@ -40,7 +41,7 @@ body{
   font-size: 24px;
   color: #7e1c4d; 
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .weather-container h2 {
@@ -73,6 +74,7 @@ body{
 .btn-container {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.507);
@@ -80,9 +82,11 @@ body{
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   width: 50vw;
   justify-content: center;
+  box-sizing: content-box;
 }
 
 .btn {
+  
   padding: 12px 25px;
   background: #ff69b4; /* 화사한 핑크색 */
   color: white;
