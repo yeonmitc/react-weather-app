@@ -6,7 +6,7 @@ function App() {
 
   const[weather ,setWeather] = useState(null)
   const [city, setCity] = useState('');
-  const cities =['paris','new york' ,'tokyo','seoul']
+  const cities =['Chicago','osaka' ,'tokyo', 'busan' ,'London' ]
   const [loading, setLoading] =useState(false)
   const key=process.env.REACT_APP_API_KEY;
 
