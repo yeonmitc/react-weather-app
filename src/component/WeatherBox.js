@@ -3,10 +3,11 @@ import React from 'react'
 
 const WeatherBox = ({weather}) => {
   if (!weather) {
-    return <div>Loading Weather...</div>; // Or some other placeholder
+    return; // Or some other placeholder
   }
   const icon = weather?.weather[0]?.icon || '01d';
-  const number = String(icon).slice(0, 2);
+  let number = String(icon).slice(0, 2);
+  if(Number(number) > 7) number = '01';
   const imgUrl = `/img/SKY${number}.png`;
   return (
     <div className="weather-container">
